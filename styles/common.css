@@ -52,3 +52,9 @@ a {
 .heading-2 {
     font-weight: 700;
 }
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 768px;
+}
