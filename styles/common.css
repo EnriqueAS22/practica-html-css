@@ -13,6 +13,10 @@
     opacity: 1;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 p {
     margin: 0;
     margin-bottom: 1rem;
@@ -20,4 +24,31 @@ p {
 
 a {
     text-decoration: none;
+}
+
+/* botones */
+
+.btn {
+    color: var(--main-text-color);
+    background-color: var(--other-bg-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+/* texto */ 
+
+
+.heading-1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.heading-2 {
+    font-weight: 700;
 }
