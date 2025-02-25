@@ -1,7 +1,9 @@
 .footer {
+    background-color: var(--other-bg-color);
+    padding: 1rem;
     text-align: center;
-    font-weight: 100;
-    font-style: italic;
-    padding: 2em;
-    background-color: red;
+    border: 2px solid var(--border-color);
+    color: var(--main-text-color);
+    opacity: 1;
+    margin-top: 25vh;
 }
