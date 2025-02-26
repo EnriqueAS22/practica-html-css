@@ -41,6 +41,12 @@ a {
     display: none;
 }
 
+@media screen and (width > 768px) {
+    .hide {
+        display: block;
+    }
+}
+
 /* texto */ 
 
 

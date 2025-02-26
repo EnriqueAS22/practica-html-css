@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/normalice.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/header.css">
 </head>
-<body>
-    
+<body class="main-bg">
+    <header class="header">
+        <img src="./assets/img/descarga (1).jpg" alt="">
+        <a class="btn" href="./">Home</a>
+    </header>
+    <h1>Formulario</h1>
+    <form action="./registro" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Add your name">
+        </div>
+        <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+        </div>
+        <div>
+            <label for="telf">Telefono</label>
+            <input type="tel" name="telf" id="telf">
+        </div>
+        <fieldset>
+            <legend>¿Cómo conociste a este Pokémon?</legend>
+            <label for="universidad">Universidad</label>
+            <input type="radio" name="meet" id="universidad" value="universidad">
+            <label for="kick-off">Keepcoding Kick-off</label>
+            <input type="radio" name="meet" id="kick-off" value="kick-off">
+            <label for="colegio">Colegio</label>
+            <input type="radio" name="meet" id="colegio" value="meet">
+            <label for="github">Github</label>
+            <input type="radio" name="meet" id="github" value="github">
+        </fieldset>
+        <fieldset>
+            <legend>¿Quieres leer nuestra revista?</legend>
+            <label for="revista">¡Clario!</label>
+            <input type="checkbox" name="revista" id="revista">
+        </fieldset>
+        <fieldset>
+            <legend>Cuentame más sobre tí</legend>
+            <label for=""></label>
+            <textarea name="" id="" rows="6" cols="48"></textarea>
+        </fieldset>
+        <div>
+            <button type="reset">
+                Reset
+            </button>
+            <button type="submit">
+                Guardar
+            </button>
+        </div>
+    </form>
 </body>
 </html>
