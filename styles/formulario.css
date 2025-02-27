@@ -1,0 +1,39 @@
+.container {
+    background-image: url('../assets/img/g-casa.jpg');
+}
+
+.card {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: var(--main-text-color);
+    color: var(--bg-color);
+    padding: 2rem 2rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0.8;
+}
+
+::placeholder {
+    color: blueviolet;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+        margin-bottom: 0.5rem;
+    }
+    input, textarea {
+        border: none;
+        padding: 0.7rem;
+        border-radius: 5px;
+        background-color: var(--bg-color);
+        color: var(--main-text-color)
+    }
+}
+
+.opciones {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}

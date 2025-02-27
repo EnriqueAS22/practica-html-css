@@ -7,55 +7,63 @@
     <link rel="stylesheet" href="./styles/normalice.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
-<body class="main-bg">
+<body class="main-bg container">
     <header class="header">
         <img src="./assets/img/descarga (1).jpg" alt="">
         <a class="btn" href="./">Home</a>
     </header>
-    <h1>Formulario</h1>
-    <form action="./registro" method="post">
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Add your name">
-        </div>
-        <div>
-            <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos">
-        </div>
-        <div>
-            <label for="telf">Telefono</label>
-            <input type="tel" name="telf" id="telf">
-        </div>
-        <fieldset>
-            <legend>¿Cómo conociste a este Pokémon?</legend>
-            <label for="universidad">Universidad</label>
-            <input type="radio" name="meet" id="universidad" value="universidad">
-            <label for="kick-off">Keepcoding Kick-off</label>
-            <input type="radio" name="meet" id="kick-off" value="kick-off">
-            <label for="colegio">Colegio</label>
-            <input type="radio" name="meet" id="colegio" value="meet">
-            <label for="github">Github</label>
-            <input type="radio" name="meet" id="github" value="github">
-        </fieldset>
-        <fieldset>
-            <legend>¿Quieres leer nuestra revista?</legend>
-            <label for="revista">¡Clario!</label>
-            <input type="checkbox" name="revista" id="revista">
-        </fieldset>
-        <fieldset>
-            <legend>Cuentame más sobre tí</legend>
-            <label for=""></label>
-            <textarea name="" id="" rows="6" cols="48"></textarea>
-        </fieldset>
-        <div>
-            <button type="reset">
-                Reset
-            </button>
-            <button type="submit">
-                Guardar
-            </button>
-        </div>
-    </form>
+    <main class="card">
+        <h1>Formulario</h1>
+        <form action="./registro" method="post">
+            <div class="form-element">
+                <label for="nombre">Nombre</label>
+                <input required type="text" name="nombre" id="nombre" placeholder="Add your name">
+            </div>
+            <div class="form-element">
+                <label for="apellidos">Apellidos</label>
+                <input required type="text" name="apellidos" id="apellidos">
+            </div>
+            <div class="form-element">
+                <label for="telf">Telefono</label>
+                <input required type="tel" name="telf" id="telf">
+            </div>
+            <fieldset class="opciones">
+                <legend>¿Cómo conociste a este Pokémon?</legend>
+                <label for="universidad">Universidad</label>
+                <input type="radio" name="meet" id="universidad" value="universidad">
+                <label for="kick-off">Keepcoding Kick-off</label>
+                <input type="radio" name="meet" id="kick-off" value="kick-off" checked>
+                <label for="colegio">Colegio</label>
+                <input type="radio" name="meet" id="colegio" value="meet">
+                <label for="github">Github</label>
+                <input type="radio" name="meet" id="github" value="github">
+            </fieldset>
+            <fieldset class="opciones">
+                <legend>¿Quieres leer nuestra revista?</legend>
+                <label for="revista">¡Clario!</label>
+                <input type="checkbox" name="revista" id="revista">
+            </fieldset>
+            <div class="form-element">
+                <legend>Cuentame más sobre tí</legend>
+                <label for="info"></label>
+                <textarea name="info" id="info" rows="6" maxlength="180" placeholder="Max 180 caracteres"></textarea>
+            </div>
+            <div>
+                <button class="btn secondary" type="reset">
+                    Reset
+                </button>
+                <button class="btn" type="submit">
+                    Guardar
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <a href="https://www.wikidex.net/wiki/Gengar" target="_blank">Pokedex</a>
+        <a href="https://github.com/EnriqueAS22" target="_blank">Github</a>
+    </footer>
 </body>
 </html>
