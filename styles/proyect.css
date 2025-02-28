@@ -6,6 +6,7 @@ figure {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 1rem;
     img {
         width: 100%;
         border-radius: 5px;
@@ -13,6 +14,9 @@ figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    &.hab {
+        grid-template-columns: none;
+    }
 }
 
 @media screen and (width > 768px) {
@@ -20,3 +24,80 @@ figure {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.progress {
+    height: 20px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    animation: progress 4s linear forwards;
+    &.atk {
+        animation: progressa 4s linear forwards;
+    }
+    &.atkesp {
+        animation: progressae 4s linear forwards;
+    }
+    &.defesp {
+        animation: progressde 4s linear forwards;
+    }
+    &.vel {
+        animation: progressv 4s linear forwards;
+    }
+}
+
+video {
+    width: 100%;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    @keyframes fadeIn {
+        0% {
+            width: 20%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes progress {
+        0% {
+            width: 10px;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+    @keyframes progressa {
+        0% {
+            width: 10px;
+        }
+        100% {
+            width: 67%;
+        }
+    }
+    @keyframes progressae {
+        0% {
+            width: 10px;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    @keyframes progressde {
+        0% {
+            width: 10px;
+        }
+        100% {
+            width: 30%;
+        }
+    }
+    @keyframes progressv {
+        0% {
+            width: 10px;
+        }
+        100% {
+            width: 92%;
+        }
+    }
+}
+

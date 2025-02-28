@@ -1,8 +1,13 @@
 .footer {
-    background-color: var(--other-bg-color);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, blueviolet 50%, rgba(0,0,0,1) 100%);
     padding: 1rem;
     text-align: center;
-    border: 2px solid var(--border-color);
-    color: var(--main-text-color);
     opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    img {
+        width: 50px;
+    }
 }

@@ -24,4 +24,8 @@
     }
 }
 
-
+@media screen and (width < 768px) {
+    .banner {
+        display: none;
+    }
+}

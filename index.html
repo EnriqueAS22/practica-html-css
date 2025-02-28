@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <html prefix="og: https://ogp.me/ns#">
+    <meta property="og:title" content="Gengar">
+    <meta property="og:description" content="¿Te atreves a entrar?">
+    <meta property="og:image" content="https://github.com/EnriqueAS22/practica-html-css/blob/main/assets/img/descarga%20(1).jpg?raw=true">
     <link rel="stylesheet" href="./styles/normalice.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/banner.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/proyect.css">
 </head>
 <body class="main-bg">
     <header class="header">
@@ -46,20 +51,56 @@
                 <p>Le gusta fingir que es una sombra, por la noche, para sorprender a la gente o a Pokémon perdidos. A veces Gengar termina cayendo en un sueño profundo mientras se oculta en la sombra de la presa que pretendía maldecir. Cuando una persona se acerca a él, se puede sentir el aura helada que lo rodea, ya que roba el calor de su alrededor haciendo descender unos 5 °C la temperatura del lugar.</p>
                 <p>Como otros Pokémon de tipo fantasma, posee la tétrica, pero igualmente enigmática cualidad de que siempre se le ve sonriente, de una manera siniestra y espeluznante aun cuando está inconsciente o es derrotado en combate, como si se burlara. Se cree que es una forma que tiene para intimidar a sus rivales, haciéndoles creer que sin importar cuantos golpes reciba, siempre se encuentra en un buen estado, aunque en realidad no sea así. Los padres en varias partes del mundo usan a Gengar como amenaza para que sus hijos se porten bien, diciéndoles que si estos se portan mal, un Gengar vendrá a por ellos.</p>
             </div>
-            <div>
-                <h2 id="habilidades">Habilidades</h2>
-                <p>PS</p>
-                <p>Ataque</p>
-                <p>Defensa</p>
-                <p>Atk.Especial</p>
-                <p>Def.Especial</p>
-                <p>Velocidad</p>
-            </div>
+        </section>
+        <section>
+            <h2 id="habilidades">Habilidades</h2>
+            <ul class="list hab">
+                <li>
+                    <figure>
+                        <figcaption>Ps</figcaption>
+                        <div class="progress"></div>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>Ataque</figcaption>
+                        <div class="progress atk"></div>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>Defensa</figcaption>
+                        <div class="progress"></div>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>Ataque Especial</figcaption>
+                        <div class="progress atkesp"></div>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>Defensa Especial</figcaption>
+                        <div class="progress defesp"></div>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>Velocidad</figcaption>
+                        <div class="progress vel"></div>
+                    </figure>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
-        <a href="https://www.wikidex.net/wiki/Gengar" target="_blank">Pokedex</a>
-        <a href="https://github.com/EnriqueAS22" target="_blank">Github</a>
+        <a href="https://www.wikidex.net/wiki/Gengar" target="_blank">
+            <img src="/assets/img/poke.jpg" alt="wikipoke">
+        </a>
+        <a href="https://github.com/EnriqueAS22" target="_blank">
+            <img src="/assets/img/github.jpg" alt="wikipoke">
+        </a>
     </footer>
 </body>
 </html>

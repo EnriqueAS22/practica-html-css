@@ -37,6 +37,7 @@ a {
     border-radius: 5px;
     border: none;
     border: 1px solid var(--other-bg-color);
+    transition: background-color 0.7s;
     &.secondary {
         background-color: var(--main-text-color);
         color: var(--bg-color);
