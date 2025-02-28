@@ -16,19 +16,23 @@
         <a class="btn" href="./">Home</a>
     </header>
     <main class="card">
-        <h1>Formulario</h1>
+        <h2>Formulario</h2>
         <form action="./registro" method="post">
             <div class="form-element">
                 <label for="nombre">Nombre</label>
-                <input required type="text" name="nombre" id="nombre" placeholder="Add your name">
+                <input required type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
             </div>
             <div class="form-element">
                 <label for="apellidos">Apellidos</label>
-                <input required type="text" name="apellidos" id="apellidos">
+                <input required type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos">
             </div>
             <div class="form-element">
                 <label for="telf">Telefono</label>
-                <input required type="tel" name="telf" id="telf">
+                <input required type="tel" name="telf" id="telf" placeholder="Escribe tu número de teléfono">
+            </div>
+            <div class="form-element">
+                <label for="github">Github</label>
+                <input required type="text" name="github" id="gituhb" placeholder="Escribe tu usuario en este formato: @<username>" pattern="^@[^\s]+">
             </div>
             <fieldset class="opciones">
                 <legend>¿Cómo conociste a este Pokémon?</legend>
@@ -37,7 +41,7 @@
                 <label for="kick-off">Keepcoding Kick-off</label>
                 <input type="radio" name="meet" id="kick-off" value="kick-off" checked>
                 <label for="colegio">Colegio</label>
-                <input type="radio" name="meet" id="colegio" value="meet">
+                <input type="radio" name="meet" id="colegio" value="colegio">
                 <label for="github">Github</label>
                 <input type="radio" name="meet" id="github" value="github">
             </fieldset>

@@ -1,6 +1,7 @@
 .footer {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, blueviolet 50%, rgba(0,0,0,1) 100%);
+    background: var(--btn-color);
     padding: 1rem;
+    margin-top: 15px;
     text-align: center;
     opacity: 1;
     display: flex;

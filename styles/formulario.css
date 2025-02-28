@@ -5,7 +5,7 @@
 .card {
     max-width: 768px;
     margin: 0 auto;
-    background-color: var(--main-text-color);
+    background-color: var(--text-color);
     color: var(--bg-color);
     padding: 2rem 2rem;
     border-bottom-left-radius: 5px;
@@ -14,7 +14,8 @@
 }
 
 ::placeholder {
-    color: blueviolet;
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 .form-element {
@@ -29,11 +30,14 @@
         padding: 0.7rem;
         border-radius: 5px;
         background-color: var(--bg-color);
-        color: var(--main-text-color)
+        color: var(--text-color)
     }
 }
 
 .opciones {
     margin-bottom: 1rem;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }

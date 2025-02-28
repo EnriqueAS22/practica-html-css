@@ -29,7 +29,7 @@ figure {
     height: 20px;
     width: 10px;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: var(--btn-color);
     animation: progress 4s linear forwards;
     &.atk {
         animation: progressa 4s linear forwards;

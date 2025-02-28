@@ -1,16 +1,25 @@
 :root {
-    --bg-color: blanchedalmond;
-    --main-text-color: black;
-    --other-bg-color: blueviolet;
-    --border-color: violet;
+    --bg-color: rgb(238, 219, 183);
+    --text-color: black;
+    --btn-color: #7b1fa2;
+    --moon-color: rgb(230, 183, 98);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 .main-bg {
-    background-color: blanchedalmond;
-    color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     opacity: 1;
+}
+
+.altsec {
+    border: 5px solid var(--text-color);
+    padding: 10px;
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10;
+    }
 }
 
 * {
@@ -26,23 +35,27 @@ a {
     text-decoration: none;
 }
 
-/* botones */
-
 .btn {
-    color: var(--main-text-color);
-    background-color: var(--other-bg-color);
+    background-color: var(--btn-color);
+    color: var(--text-color);
     text-decoration: none;
     padding: 0.5rem;
     display: inline-block;
     border-radius: 5px;
     border: none;
-    border: 1px solid var(--other-bg-color);
-    transition: background-color 0.7s;
+    border: 1px solid var(--btn-color);
+    transition: background-color 0.3s;
     &.secondary {
-        background-color: var(--main-text-color);
-        color: var(--bg-color);
-        border: 1px solid var(--bg-color);
+        background-color: var(--moon-color);
+        color: var(--text-color);
+        border: 1px solid var(--moon-color);
     }
+}
+
+.hide {
+    display: none;
+    background-color: var(--moon-color);
+    border: 1px solid var(--moon-color);
 }
 
 @media screen and (hover: hover) {
@@ -50,17 +63,19 @@ a {
         cursor: pointer;
     }
     .btn:hover {
-        background-color: var(--bg-color);
+        background-color: transparent;
         border: 1px solid var(--bg-color);
+        color: antiquewhite;
     }
     .btn.secondary:hover {
         background-color: transparent;
     }
+    .hide:hover {
+        background-color: transparent;
+        color: antiquewhite;
+    }
 }
 
-.hide {
-    display: none;
-}
 
 @media screen and (width > 768px) {
     .hide {

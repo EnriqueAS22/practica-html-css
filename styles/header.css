@@ -1,7 +1,7 @@
 .header {
     position: sticky;
     top: 0;
-    background-color: var(--main-text-color);
+    background-color: var(--text-color);
     z-index: 999;
     display: flex;
     justify-content: space-between;
