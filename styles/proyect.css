@@ -1,30 +1,3 @@
-figure {
-    margin: 0;
-}
-
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-    img {
-        width: 100%;
-        border-radius: 5px;
-    }
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    &.hab {
-        grid-template-columns: none;
-    }
-}
-
-@media screen and (width > 768px) {
-    .list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 .progress {
     height: 20px;
     width: 10px;
